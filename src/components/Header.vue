@@ -22,8 +22,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+nav {
+  background: #42b983;
+}
 a {
-  color: #42b983;
+  color: #000000;
+  font-size: 2em;
   padding: 1em;
 }
 </style>
