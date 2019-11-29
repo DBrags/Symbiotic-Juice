@@ -1,12 +1,17 @@
 <template>
   <div class="header">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/juices">Juices</router-link>
-      <router-link to="/health">Health</router-link>
-      <router-link to="/locations">Locations</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
+    <b-navbar toggleable="lg">
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-link to="home">Home</b-link>
+        <b-link to="juices">Juices</b-link>
+        <b-link to="health">Health</b-link>
+        <b-link to="locations">Locations</b-link>
+        <b-link to="about">About</b-link>
+      </b-navbar-nav>
+    </b-collapse>
+    </b-navbar>
     <router-view></router-view>
   </div>
 </template>
@@ -27,7 +32,6 @@ nav {
 }
 a {
   color: #000000;
-  font-size: 2em;
-  padding: 1em;
+  padding: 1%;
 }
 </style>
