@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <Header msg="Header"/>
-    <Main msg="Welcome to Symbiotic Juice site."/>
-    <Footer msg="Footer"/>
+    <Header />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Main from './components/Main.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
     Footer,
-    Main
   }
 }
 </script>
