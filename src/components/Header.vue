@@ -1,7 +1,9 @@
 <template>
   <div class="header">
+
     <b-navbar toggleable="lg">
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-brand href="">Symbiotic Juice</b-navbar-brand>
+    <b-navbar-toggle target="nav-collapse"/>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-link to="home">Home</b-link>
@@ -13,6 +15,7 @@
     </b-collapse>
     </b-navbar>
     <router-view></router-view>
+
   </div>
 </template>
 
