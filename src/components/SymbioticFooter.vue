@@ -1,12 +1,12 @@
 <template>
-  <div class="health">
-    <h1>Health</h1>
+  <div class="footer">
+    <p>© 2018-2019, Symbiotic Juice, LLC</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'health',
+  name: 'symbiotic-footer',
   props: {
     msg: String
   }

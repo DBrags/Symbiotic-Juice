@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Header />
-    <Footer />
+    <symbiotic-header />
+    <symbiotic-footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import SymbioticHeader from './components/SymbioticHeader.vue'
+import SymbioticFooter from './components/SymbioticFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    Header,
-    Footer,
+    SymbioticHeader,
+    SymbioticFooter,
   }
 }
 </script>

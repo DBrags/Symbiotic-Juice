@@ -1,12 +1,12 @@
 <template>
-  <div class="health">
-    <h1>Health</h1>
+  <div class="mission">
+    <h3>Mission</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'health',
+  name: 'mission',
   props: {
     msg: String
   }

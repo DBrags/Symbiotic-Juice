@@ -5,11 +5,7 @@
     <b-navbar-toggle target="nav-collapse"/>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-link to="home">Home</b-link>
-        <b-link to="juices">Juices</b-link>
-        <b-link to="health">Health</b-link>
-        <b-link to="locations">Locations</b-link>
-        <b-link to="about">About</b-link>
+        <b-link v-for="(route, index) in routes" :key="index" :to="route.path">{{ route.name }}</b-link>
       </b-navbar-nav>
     </b-collapse>
     </b-navbar>
@@ -19,9 +15,17 @@
 
 <script>
 export default {
-  name: 'Header',
-  props: {
-    msg: String
+  name: 'symbiotic-header',
+  data() {
+    return {
+      routes :[
+        { path: "/", name: "Home" },
+        { path: "/juices", name: "Juices" },
+        { path: "/health", name: "Health" },
+        { path: "/locations", name: "Locations" },
+        { path: "/about", name: "About" }
+      ]
+    }
   }
 }
 </script>
