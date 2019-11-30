@@ -1,6 +1,11 @@
 <template>
   <div class="video">
-    <h3>Symbiotic Video</h3>
+    <b-embed 
+      type="embed"
+      aspect="16by9"
+      src="https://www.youtube.com/embed/p6FblZ7cRyo"
+      allowFullscreen
+    ></b-embed>
   </div>
 </template>
 
