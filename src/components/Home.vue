@@ -1,7 +1,6 @@
 <template>
   <div class="main">
-    <h1>Home</h1>
-    <carasouelle />
+    <carousel />
     <mission />
     <simple-menu />
     <social-media />
@@ -9,7 +8,7 @@
 </template>
 
 <script>
-import Carasouelle from './Carasouelle.vue'
+import Carousel from './Carousel.vue'
 import Mission from './Mission.vue'
 import SimpleMenu from './SimpleMenu.vue'
 import SocialMedia from './SocialMedia.vue'
@@ -17,7 +16,7 @@ import SocialMedia from './SocialMedia.vue'
 export default {
   name: 'home',
   components: {
-    Carasouelle,
+    Carousel,
     Mission,
     SimpleMenu,
     SocialMedia
