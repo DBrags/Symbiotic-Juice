@@ -1,12 +1,12 @@
 <template>
-  <div class="animation">
+  <div class="health">
     <h3>{{ msg }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'animation',
+  name: 'health-section',
   props: {
     msg: String
   }

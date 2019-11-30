@@ -1,14 +1,21 @@
 <template>
   <div class="juices">
     <h1>Juices</h1>
+    <animation msg="Jar Animation"/>
+    <animation msg="Menu Animation"/>
+    <symbiotic-video />
   </div>
 </template>
 
 <script>
+import Animation from './Animation.vue'
+import SymbioticVideo from './SymbioticVideo.vue'
+
 export default {
   name: 'juices',
-  props: {
-    msg: String
+  components: {
+    Animation,
+    SymbioticVideo
   }
 }
 </script>

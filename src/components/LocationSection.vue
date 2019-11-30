@@ -1,12 +1,12 @@
 <template>
-  <div class="animation">
+  <div class="location-section">
     <h3>{{ msg }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'animation',
+  name: 'location-section',
   props: {
     msg: String
   }
