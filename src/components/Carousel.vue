@@ -15,8 +15,8 @@
     >
       <!-- Text slides with image -->
       <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        caption="Symbiotic Juice"
+        text="Welcome to fresh organic artisin cold pressed juice."
         img-src="https://picsum.photos/1024/480/?image=52"
       ></b-carousel-slide>
 

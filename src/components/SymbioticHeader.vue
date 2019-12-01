@@ -37,6 +37,6 @@ nav {
 }
 a {
   color: #000000;
-  padding: 1%;
+  padding: 0em 1em;
 }
 </style>

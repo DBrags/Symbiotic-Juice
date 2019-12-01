@@ -2,7 +2,7 @@
   <div class="mission">
     <b-button class="btn" @click="transform">Mission</b-button>
     <div id="container">
-        <div class="box">LEFT</div>
+        <div class="box">Mission Animation</div>
     </div>
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
 }
 
 .box {
-    width: 150px; height: 150px;
+    width: 350px; height: 150px;
     position: absolute; top:35px; left: 50px;
     font-size: 40px;
     line-height:150px;
