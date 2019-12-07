@@ -1,8 +1,9 @@
 <template>
   <div class="mission">
-    <b-button class="btn" @click="transform">Mission</b-button>
     <div id="container">
-        <div class="box">Mission Animation</div>
+        <div id="box" :style="{ left: mission.left }" @click="missionClick">
+          <p id="mission-statement">{{ mission.text }}</p>
+        </div>
     </div>
   </div>
 </template>
@@ -12,23 +13,38 @@ import Kute from 'kute.js'
 
 export default {
   name: 'mission',
-  props: {
-    msg: String
+  data() {
+    return {
+      mission: {
+        text: 'Click Me!',
+        left: ((window.innerWidth / 2) - (350 / 2) - 100) + 'px'
+      }
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
   },
   methods: {
-    transform: function(){
-    console.log('transform')
+    missionClick:function() {
     //identify the element
-    var el = document.querySelector('.box');
+    var el = document.querySelector('#box');
 
     //built the tween object
     var tween = Kute.fromTo(el, 
-      {left:50},{left:500},
-      {repeat: 1,yoyo:true, easing: 'easingCubicOut'}
+      {rotateX:0},{rotateX:360}
     );
 
-    //start the animation
-    tween.start();
+    tween.start()
+
+    this.mission.text = 'Mission statement'
+
+    },
+    handleResize:function() {
+      this.mission.left = ((window.innerWidth / 2) - (350 / 2) ) + 'px'
     }
   }
 }
@@ -36,20 +52,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#container {
-    position: relative;
-    display: block;
-    height: 200px;
-}
-
-.box {
+#box {
     width: 350px; height: 150px;
-    position: absolute; top:35px; left: 50px;
+    position: absolute; top:35px; left: 0px;
     font-size: 40px;
     line-height:150px;
     text-align: center;
     border-radius: 10px;
     background-color: #42B983;
+}
+#container {
+    position: relative;
+    display: block;
+    height: 200px;
 }
 
 </style>

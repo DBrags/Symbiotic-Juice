@@ -1,6 +1,5 @@
 <template>
   <div class="team">
-    <h3>Team</h3>
     <b-card-group>
       <b-card v-for="(teammate, index) in team" :key="index" :title="teammate.name" :img-src="teammate.pic" img-alt="Image" img-top>
         <b-card-text>
@@ -12,8 +11,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'team',
   data() {

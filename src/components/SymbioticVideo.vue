@@ -3,8 +3,7 @@
     <b-embed 
       type="embed"
       aspect="16by9"
-      src="https://www.youtube.com/embed/p6FblZ7cRyo"
-      allowFullscreen
+      :src="video.src"
     ></b-embed>
   </div>
 </template>
@@ -12,9 +11,13 @@
 <script>
 export default {
   name: 'symbiotic-video',
-  props: {
-    msg: String
-  }
+  data() {
+    return {
+      video: {
+        src: 'https://www.youtube.com/embed/p6FblZ7cRyo'
+      }
+    }
+  },
 }
 </script>
 
